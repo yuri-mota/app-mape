@@ -1,1 +1,20 @@
-<p>register-user works!</p>
+<div class="tela-registro">
+  <h1>Registro de Usuário</h1>
+  <div class="formulario-registro">
+    <h6>Nome</h6>
+    <input type="text" size="40" pInputText [(ngModel)]="nome">
+    <h6>e-Mail</h6>
+    <input type="text" size="40" pInputText [(ngModel)]="email">
+    <h6>CPF</h6>
+    <p-inputMask mask="999.999.999-99" size="40" [(ngModel)]="cpf"></p-inputMask>
+    <h6>Cargo</h6>
+    <input type="text" size="40" pInputText [(ngModel)]="cargo">
+    <h6>Senha</h6>
+    <input type="password" size="40" pInputText [(ngModel)]="senha">
+    <h6>Confirmação da Senha</h6>
+    <input type="password" size="40" pInputText [(ngModel)]="confirmarSenha">
+    <br><br>
+    <p-button label="Confirmar" class="adjusted-button"></p-button>
+    <p-button label="Cancelar" class="adjusted-button"></p-button>
+  </div>
+</div>
